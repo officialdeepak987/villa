@@ -50,6 +50,32 @@
             filter: brightness(0.5);
         }
 
+        /* Typewriter effect */
+        .typewriter h1 {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange; /* The typwriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            animation: 
+                typing 8.5s steps(98, end) infinite,
+                blink-caret .75s step-end infinite;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            0% { width: 0; }
+            /* Typing lasts for 3.5s of the 8.5s total duration */
+            41% { width: 100%; } 
+            /* Pauses for 5s */
+            100% { width: 100%; }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+        }
+
         /* Testimonial Scroller */
         @keyframes scroll {
             0% { transform: translateX(0); }
@@ -84,6 +110,7 @@
         </div>
     </header>
 
+   
     <!-- Hero Section -->
     <section class="relative h-screen flex items-center justify-center text-white overflow-hidden">
         <video autoplay muted loop class="video-background">
@@ -91,7 +118,9 @@
             Your browser does not support the video tag.
         </video>
         <div class="text-center z-10 p-4">
-            <h1 class="text-4xl md:text-7xl lg:text-8xl font-serif mb-4 leading-tight">Your Private Paradise</h1>
+            <div class="typewriter inline-block">
+                 <h1 class="text-4xl md:text-7xl lg:text-8xl font-serif mb-4 leading-tight">Your Private Paradise</h1>
+            </div>
             <p class="text-lg md:text-xl max-w-2xl mx-auto">Experience unparalleled luxury and tranquility at our exclusive beachfront pool villa.</p>
         </div>
     </section>
@@ -315,35 +344,7 @@
             </div>
         </div>
     </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-16">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12 fade-in-up">
-                <span class="text-cyan-600 font-semibold">Our Gallery</span>
-                <h2 class="text-4xl md:text-5xl font-serif mt-2">Some Of Our Photo Galleries</h2>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="grid gap-4">
-                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/pool.jpg" alt=""></div>
-                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/villa2.jpg" alt=""></div>
-                </div>
-                <div class="grid gap-4">
-                     <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/villa3.jpg" alt=""></div>
-                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/pool4.jpg" alt=""></div>
-                </div>
-                <div class="grid gap-4">
-                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/pool3.jpg" alt=""></div>
-                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/pool5.jpg" alt=""></div>
-                </div>
-                <div class="grid gap-4">
-                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/pool2.jpg" alt=""></div>
-                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Our Services Section -->
     <section id="services" class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
@@ -439,6 +440,34 @@
                 </div>
                 <div class="fade-in-up order-1 md:order-2">
                     <img src="https://www.diveandaman.com/storage/ck/080525094610-havelock-island-beach-resort.png" class="rounded-lg shadow-xl w-full h-auto object-cover" alt="Scuba Diving">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 fade-in-up">
+                <span class="text-cyan-600 font-semibold">Our Gallery</span>
+                <h2 class="text-4xl md:text-5xl font-serif mt-2">Some Of Our Photo Galleries</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/pool.jpg" alt=""></div>
+                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/villa2.jpg" alt=""></div>
+                </div>
+                <div class="grid gap-4">
+                     <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/villa3.jpg" alt=""></div>
+                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/pool4.jpg" alt=""></div>
+                </div>
+                <div class="grid gap-4">
+                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/pool3.jpg" alt=""></div>
+                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/pool5.jpg" alt=""></div>
+                </div>
+                <div class="grid gap-4">
+                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/pool2.jpg" alt=""></div>
+                    <div class="overflow-hidden rounded-lg shadow-lg fade-in-up"><img class="h-auto max-w-full gallery-img" src="https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
                 </div>
             </div>
         </div>
