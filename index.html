@@ -126,7 +126,7 @@
     </section>
 
     <!-- Image Carousel on Hover Section -->
-    <section class="py-16 bg-gray-50">
+    <section class="py-8 bg-gray-50">
         <div class="container mx-auto px-6">
              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
                 <div class="relative overflow-hidden h-96 group hero-carousel-item">
@@ -146,12 +146,12 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16">
+    <section id="about" class="py-8">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="fade-in-up">
                     <span class="text-cyan-600 font-semibold">About Us</span>
-                    <h2 class="text-4xl md:text-5xl font-serif mt-2 mb-6">Havelock Island Beach Resort Launches Beachfacing Private Pool Villas for Ultimate Luxury</h2>
+                    <h2 class="text-4xl md:text-4xl font-serif mt-2 mb-6">Havelock Island Beach Resort Launches Beachfacing Private Pool Villas for Ultimate Luxury</h2>
                     <p class="text-gray-600 mb-8">
                         Havelock Island Beach Resort is delighted to announce the launch of our brand new Private Pool Villas - a unique stay experience that provides comfort and beauty & sanctuary among the beautiful Andaman Islands! Situated in the secluded section of our property, our new Private Pool Villas will enhance your stay on the beautiful Havelock Island. The villas are chic yet island inspired, the ideal experience for any traveler looking for an alternative storage experience. 
                     </p>
@@ -200,25 +200,11 @@
                             </div>
                         </li>
                     </ul>
-                    <!-- <div class="flex items-center space-x-12 mb-8">
-                        <div>
-                            <p class="text-3xl font-bold text-cyan-600">2K+</p>
-                            <p class="text-gray-500">Guests Are Served</p>
-                        </div>
-                        <div>
-                            <p class="text-4xl font-bold text-cyan-600">3</p>
-                            <p class="text-gray-500">Villas & Resorts</p>
-                        </div>
-                        <div>
-                            <p class="text-4xl font-bold text-cyan-600">1</p>
-                            <p class="text-gray-500">Locations</p>
-                        </div>
-                    </div> -->
                      <a href="#" class="bg-cyan-600 text-white px-8 py-3 rounded-full hover:bg-cyan-700 transition-colors duration-300 inline-block">More About Us</a>
                 </div>
                 <div class="grid grid-cols-2 gap-4 fade-in-up">
                     <img src="	https://www.havelockislandbeachresort.com/storage/banners/resort-edited-2.png" class="rounded-lg shadow-xl w-full h-auto object-cover col-span-2" alt="Pool side">
-                    <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/villa2.jpg" class="rounded-lg shadow-xl w-full h-auto object-cover" alt="Beach view">
+                    <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/havelock-pool-villa/havelock-villa2.jpg" class="rounded-lg shadow-xl w-full h-auto object-cover" alt="Beach view">
                     <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/villa3.jpg" class="rounded-lg shadow-xl w-full h-auto object-cover" alt="Interior">
                 </div>
             </div>
@@ -226,7 +212,7 @@
     </section>
 
     <!-- Our Villa Section -->
-    <section id="villas" class="py-16 bg-gray-50">
+    <section id="villas" class="py-8 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12 fade-in-up">
                 <span class="text-cyan-600 font-semibold">Our Villa</span>
@@ -234,8 +220,20 @@
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Villa Card 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden fade-in-up">
-                    <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/villa3.jpg" alt="Oceanfront Bliss Villa" class="w-full h-64 object-cover">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden fade-in-up villa-card">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="flex transition-transform duration-500 ease-in-out h-full villa-images">
+                            <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/villa3.jpg" alt="Ocean Suite Villa 1" class="w-full h-full object-cover flex-shrink-0 gallery-img">
+                            <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/pool.jpg" alt="Ocean Suite Villa 2" class="w-full h-full object-cover flex-shrink-0 gallery-img">
+                            <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/villa2.jpg" alt="Ocean Suite Villa 3" class="w-full h-full object-cover flex-shrink-0 gallery-img">
+                        </div>
+                        <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/50 p-1 rounded-full shadow-md z-10 hover:bg-white transition-colors prev-btn">
+                            <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white/50 p-1 rounded-full shadow-md z-10 hover:bg-white transition-colors next-btn">
+                            <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
                     <div class="p-4">
                         <h3 class="text-2xl font-serif mb-3">Ocean Suite Private Pool Villa - Beach front</h3>
                         <ul class="space-y-2 text-gray-600 mb-6 list-disc list-inside">
@@ -254,8 +252,20 @@
                     </div>
                 </div>
                 <!-- Villa Card 2 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden fade-in-up" style="animation-delay: 0.2s;">
-                    <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/presidential-pool-villa/previlla3.jpg" alt="Sunset Serenity Villa" class="w-full h-64 object-cover">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden fade-in-up villa-card" style="animation-delay: 0.2s;">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="flex transition-transform duration-500 ease-in-out h-full villa-images">
+                            <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/presidential-pool-villa/previlla3.jpg" alt="Presidential Suite Villa 1" class="w-full h-full object-cover flex-shrink-0 gallery-img">
+                            <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/presidential-pool-villa/previlla1.jpg" alt="Presidential Suite Villa 2" class="w-full h-full object-cover flex-shrink-0 gallery-img">
+                            <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/presidential-pool-villa/poolvilla2.JPG" alt="Presidential Suite Villa 3" class="w-full h-full object-cover flex-shrink-0 gallery-img">
+                        </div>
+                        <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/50 p-1 rounded-full shadow-md z-10 hover:bg-white transition-colors prev-btn">
+                             <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white/50 p-1 rounded-full shadow-md z-10 hover:bg-white transition-colors next-btn">
+                            <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
                     <div class="p-4 ">
                         <h3 class="text-2xl font-serif mb-3">Presidential Ocean Suite Private Pool Villa - Beach Front</h3>
                         <ul class="space-y-2 text-gray-600 mb-6 list-disc list-inside">
@@ -274,8 +284,20 @@
                     </div>
                 </div>
                 <!-- Villa Card 3 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden fade-in-up" style="animation-delay: 0.4s;">
-                     <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/havelock-pool-villa/havelock-villa.jpg" alt="The Grand Coral Villa" class="w-full h-64 object-cover">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden fade-in-up villa-card" style="animation-delay: 0.4s;">
+                     <div class="relative h-64 overflow-hidden">
+                        <div class="flex transition-transform duration-500 ease-in-out h-full villa-images">
+                            <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/havelock-pool-villa/havelock-villa.jpg" alt="Havelock Paradise Villa 1" class="w-full h-full object-cover flex-shrink-0 gallery-img">
+                            <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/havelock-pool-villa/havelock-villa2.jpg" alt="Havelock Paradise Villa 2" class="w-full h-full object-cover flex-shrink-0 gallery-img">
+                            <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/havelock-pool-villa/havelock-villa-4.jpg" alt="Havelock Paradise Villa 3" class="w-full h-full object-cover flex-shrink-0 gallery-img">
+                        </div>
+                        <button class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/50 p-1 rounded-full shadow-md z-10 hover:bg-white transition-colors prev-btn">
+                             <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white/50 p-1 rounded-full shadow-md z-10 hover:bg-white transition-colors next-btn">
+                            <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
                     <div class="p-4">
                         <h3 class="text-2xl font-serif mb-3">Havelock Paradise Private Pool Villa - Beach Front</h3> 
 
@@ -299,27 +321,27 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="relative bg-cover bg-center bg-fixed py-16" style="background-image: url('https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=2549&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+    <section class="relative bg-cover bg-center bg-fixed py-8" style="background-image: url('https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=2549&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
         <div class="absolute inset-0 bg-black/50"></div>
         <div class="container mx-auto px-6 text-center relative z-10 fade-in-up">
-            <h2 class="text-4xl md:text-5xl font-serif text-white mb-4">Your Dream Vacation Awaits</h2>
+            <h2 class="text-4xl md:text-4xl font-serif text-white mb-4">Your Dream Vacation Awaits</h2>
             <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">Create unforgettable memories. Let us handle the details while you relax and rejuvenate.</p>
             <a href="#contact" class="bg-white text-cyan-600 px-10 py-4 rounded-full font-bold hover:bg-gray-100 transition-colors duration-300 text-lg">Inquire Now</a>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section id="why-choose-us" class="py-16">
+    <section id="why-choose-us" class="py-8">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="grid grid-cols-2 gap-4 items-end fade-in-up">
-                    <img src="	https://www.havelockislandbeachresort.com/storage/banners/img-20250923-184742.jpg" alt="Architecture" class="rounded-lg shadow-xl w-full col-span-2">
-                     <img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Service" class="rounded-lg shadow-xl w-full h-auto object-cover">
-                      <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/pool-vila/suite-private-pool/img-20250923-184623.jpg" alt="Pool chairs" class="rounded-lg shadow-xl w-full h-auto object-cover mt-[-50%]">
+                    <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/havelock-pool-villa/sea-view.jpg" alt="Architecture" class="rounded-lg shadow-xl w-full col-span-2">
+                     <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/havelock-pool-villa/havelock-villa-3.jpg" alt="Service" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                      <img src="https://www.havelockislandbeachresort.com/storage/room-latest-img/havelock-pool-villa/privateimg.jpg" alt="Pool chairs" class="rounded-lg shadow-xl w-full h-auto object-cover mt-[-50%]">
                 </div>
                 <div class="fade-in-up" style="animation-delay: 0.2s;">
                     <span class="text-cyan-600 font-semibold">Why Choose Us?</span>
-                    <h2 class="text-4xl md:text-5xl font-serif mt-2 mb-8">Escape to Paradise: Beachfacing Private Pool Villas at Havelock Island Beach Resort</h2>
+                    <h2 class="text-4xl md:text-4xl font-serif mt-2 mb-8">Escape to Paradise: Beachfacing Private Pool Villas at Havelock Island Beach Resort</h2>
                     <ul class="space-y-6">
                         <li class="flex items-start">
                             <div class="flex-shrink-0 bg-cyan-100 text-cyan-600 rounded-full h-8 w-8 flex items-center justify-center mr-4 mt-1">
@@ -355,11 +377,11 @@
     </section>
 
     <!-- Amenities Section -->
-    <section id="amenities" class="py-16 bg-gray-50">
+    <section id="amenities" class="py-12 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12 fade-in-up">
                 <span class="text-cyan-600 font-semibold">Our Facilities</span>
-                <h2 class="text-4xl md:text-5xl font-serif mt-2">Amenities We Provide</h2>
+                <h2 class="text-4xl md:text-4xl font-serif mt-2">Amenities We Provide</h2>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
                 <div class="fade-in-up">
@@ -403,7 +425,7 @@
     </section>
 
     <!-- Our Services Section -->
-    <section id="services" class="py-16 bg-gray-50">
+    <section id="services" class="py-12 bg-gray-50">
   <div class="container mx-auto px-6">
     <div class="text-center mb-12 fade-in-up">
       <span class="text-cyan-600 font-semibold">Our Services</span>
@@ -512,15 +534,17 @@
     </section>
 
     <!-- Nemo Cafe Section -->
-    <section id="cafe" class="py-20">
+    <section id="cafe" class="py-12">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="fade-in-up">
-                    <img src="https://www.havelockislandbeachresort.com/storage/sea-dragon-restaurant/sea-dragon-bar-restaurant-1.JPG" class="rounded-lg shadow-xl w-full h-auto object-cover" alt="Nemo Cafe">
+                <div class="grid grid-cols-2 gap-4 fade-in-up">
+                    <img src="https://www.havelockislandbeachresort.com/storage/sea-dragon-restaurant/sea-dragon-bar-restaurant-1.JPG" class="rounded-lg shadow-xl w-full h-auto object-cover col-span-2" alt="Nemo Cafe">
+                    <img src="https://www.havelockislandbeachresort.com/storage/nemo-cafe/1.jpg" class="rounded-lg shadow-xl w-full h-auto object-cover" alt="Cafe Interior">
+                    <img src="https://www.havelockislandbeachresort.com/storage/nemo-cafe/5.jpg" class="rounded-lg shadow-xl w-full h-auto object-cover" alt="Delicious Food">
                 </div>
                 <div class="fade-in-up" style="animation-delay: 0.2s;">
                     <span class="text-cyan-600 font-semibold">Dining Experience</span>
-                    <h2 class="text-4xl md:text-5xl font-serif mt-2 mb-2">Discover Nemo Cafe & Sea Dragon Restaurant: Seafacing Dining at Havelock Island</h2>
+                    <h2 class="text-4xl md:text-4xl font-serif mt-2 mb-2">Discover Nemo Cafe & Sea Dragon Restaurant: Seafacing Dining at Havelock Island</h2>
                     <p class="text-gray-600 mb-2">
                         Try the Nemo Cafe and Sea Dragon Restaurant, located right on the beach at Havelock Island Beach Resort. Fresh, local seafood, delicious local food, and a nice cocktail literally at the feet of the ocean! Nemo Cafe accommodates a casual, fun dining scene that is very different from the more formal luxury dining experience at Sea Dragon Restaurant, but each meal will have a distinct, memorable atmosphere that will be part of your essence tropical holiday. Fantastic local food experiences while sitting on the beach really will make those memories in paradise special.
                     </p>
@@ -537,12 +561,12 @@
     </section>
 
     <!-- Dive Sport Section -->
-    <section id="diving" class="py-20 bg-gray-50">
+    <section id="diving" class="py-12 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                  <div class="fade-in-up order-2 md:order-1">
                     <span class="text-cyan-600 font-semibold">Underwater Adventure</span>
-                    <h2 class="text-4xl md:text-5xl font-serif mt-2 mb-3">Underwater Adventure at Havelock Island: PADI Certified Diving </h2>
+                    <h2 class="text-4xl md:text-4xl font-serif mt-2 mb-3">Underwater Adventure at Havelock Island: PADI Certified Diving </h2>
                     <p class="text-gray-600 mb-2">
                        Live the experience of a lifetime beneath the water from your private pool villa at Havelock Island Beach Resort. The resort's PADI Dive Centre offers some of the best diving and snorkeling excursions on the island for experienced and first time snorkeling and diving experiences on the island. Swim over the spectacularly colourful coral reefs and swim with exotic sea creatures in the underwater paradise of the Andaman Sea. Whether you want to do a legitimate PADI qualification, join a regular day trip for diving and snorkeling, or just hire equipment for the day, our trained professionals will honour you with memories to last a lifetime beneath the sea.
                     </p>
@@ -553,8 +577,10 @@
                     </ul>
                      <a href="#" class="bg-cyan-600 text-white px-8 py-3 rounded-full hover:bg-cyan-700 transition-colors duration-300 inline-block">Book a Dive</a>
                 </div>
-                <div class="fade-in-up order-1 md:order-2">
-                    <img src="https://www.diveandaman.com/storage/ck/080525094610-havelock-island-beach-resort.png" class="rounded-lg shadow-xl w-full h-auto object-cover" alt="Scuba Diving">
+                <div class="grid grid-cols-2 gap-4 fade-in-up order-1 md:order-2">
+                    <img src="https://www.diveandaman.com/storage/ck/080525094610-havelock-island-beach-resort.png" class="rounded-lg shadow-xl w-full h-auto object-cover col-span-2" alt="Scuba Diving">
+                    <img src="https://www.havelockislandbeachresort.com/storage/water-sports-listing-page-hibr/scuba-diving-in-nemo-beach.jpg" class="rounded-lg shadow-xl w-full h-auto object-cover" alt="Diver with turtle">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-lg shadow-xl w-full h-auto object-cover" alt="Group of divers">
                 </div>
             </div>
         </div>
@@ -567,7 +593,7 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-12 fade-in-up">
                 <span class="text-cyan-600 font-semibold">Our Gallery</span>
-                <h2 class="text-4xl md:text-5xl font-serif mt-2">Some Of Our Photo Galleries</h2>
+                <h2 class="text-4xl md:text-4xl font-serif mt-2">Some Of Our Photo Galleries</h2>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
@@ -651,7 +677,6 @@
         <svg class="absolute bottom-10 right-20 w-16 h-16 text-gray-500/70 hidden lg:block transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12 A10 10 0 1 0 12 22 A10 10 0 0 0 22 12 Z"></path><path d="M22 12 A10 10 0 1 0 12 22 A10 10 0 0 0 22 12 Z" transform="rotate(60 12 12)"></path><path d="M22 12 A10 10 0 1 0 12 22 A10 10 0 0 0 22 12 Z" transform="rotate(120 12 12)"></path></svg>
     </section>
 
-
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-16">
         <div class="container mx-auto px-6">
@@ -666,35 +691,30 @@
                 <div class="bg-white p-8 rounded-lg shadow-lg testimonial-card mx-4">
                     <p class="text-gray-600 mb-6">"What a holiday experience! The private pool villa was gorgeous, huge, and très luxurious. Waking to waves and enjoying the independence of a private pool was simply luxury. The beach front location and tailor-made service made our vacation ideal."</p>
                     <div class="flex items-center">
-                        <!-- <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Avatar of Sarah L."> -->
                         <div><p class="font-semibold">Kabita </p><p class="text-gray-500 text-sm">Mumbai</p></div>
                     </div>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-lg testimonial-card mx-4">
                     <p class="text-gray-600 mb-6">"I just adored the seclusion and peace of the private pool villa. The villa was elegantly furnished with contemporary comforts and lovely vistas of the beach at Havelock Island. Perfect for a romantic couple's retreat."</p>
                     <div class="flex items-center">
-                        <!-- <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar of Michael B."> -->
                         <div><p class="font-semibold">Ravi</p><p class="text-gray-500 text-sm">New Delhi</p></div>
                     </div>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-lg testimonial-card mx-4">
                     <p class="text-gray-600 mb-6">"The pool villa was way beyond our expectation! Spic and span clean, with such nice touches and a pretty outdoor pool. The resort staff was friendly and ensured we had everything that we needed. Wholeheartedly recommended for all the visitors to Havelock Island."</p>
                     <div class="flex items-center">
-                        <!-- <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar of The Johnson Family"> -->
                         <div><p class="font-semibold">Family</p><p class="text-gray-500 text-sm">Kolkata</p></div>
                     </div>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-lg testimonial-card mx-4">
                     <p class="text-gray-600 mb-6">"A piece of paradise! The villa pool was the height of luxury and nature. We had private use of the beach, sunbathing by the pool, and easy proximity to water sports. Perfect for friends and couples."</p>
                     <div class="flex items-center">
-                        <!-- <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/men/46.jpg" alt="Avatar of David C."> -->
                         <div><p class="font-semibold">Nidhi</p><p class="text-gray-500 text-sm">mumbai</p></div>
                     </div>
                 </div>
                  <div class="bg-white p-8 rounded-lg shadow-lg testimonial-card mx-4">
                     <p class="text-gray-600 mb-6">"The feeling of residing at the private pool villa was absolutely unforgettable. The peaceful ambiance and stunning ocean vista made all the moments feel like magic. The villa's seclusion provided us with plenty of chances to relax completely. Really looking forward to returning again!"</p>
                     <div class="flex items-center">
-                        <!-- <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/women/31.jpg" alt="Avatar of Emily R."> -->
                         <div><p class="font-semibold">Ashik A.</p><p class="text-gray-500 text-sm"></p></div>
                     </div>
                 </div>
@@ -702,14 +722,12 @@
                  <div class="bg-white p-8 rounded-lg shadow-lg testimonial-card mx-4">
                     <p class="text-gray-600 mb-6">"Perfect for a vacation! The villa's private pool and spacious living area made the experience more than memorable. The location of the Havelock Island Beach Resort was ideal, with great eating facilities and water sports at walking distance."</p>
                     <div class="flex items-center">
-                        <!-- <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Avatar of Sarah L."> -->
                         <div><p class="font-semibold">ashik a.</p><p class="text-gray-500 text-sm"> family with 1 kid</p></div>
                     </div>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-lg testimonial-card mx-4">
                     <p class="text-gray-600 mb-6">"The perfect getaway. Waking up to the sound of the ocean was a dream. The villa had everything we needed and more. Highly recommend!"</p>
                     <div class="flex items-center">
-                        <!-- <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar of Michael B."> -->
                         <div><p class="font-semibold">mayurkumar</p><p class="text-gray-500 text-sm"></p></div>
                     </div>
                 </div>
@@ -994,6 +1012,30 @@
                     answer.classList.add('hidden');
                     icon.textContent = '+';
                 }
+            });
+        });
+
+        // Villa Carousels
+        document.querySelectorAll('.villa-card').forEach(card => {
+            const imageContainer = card.querySelector('.villa-images');
+            const prevBtn = card.querySelector('.prev-btn');
+            const nextBtn = card.querySelector('.next-btn');
+            const images = imageContainer.querySelectorAll('img');
+            const totalImages = images.length;
+            let currentIndex = 0;
+
+            function updateCarousel() {
+                imageContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+                updateCarousel();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % totalImages;
+                updateCarousel();
             });
         });
 
